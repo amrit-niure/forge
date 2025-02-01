@@ -9,13 +9,6 @@ export default function EmployerSignIn() {
       <div className="flex h-full">
         <div className="flex-1 hidden h-full bg-muted p-10  dark:border-r lg:flex">
           <div className="flex items-center text-lg font-medium">Eloom</div>
-          <div className="relative hidden bg-muted md:block">
-            <img
-              src="/placeholder.svg"
-              alt="Image"
-              className="absolute inset-0 h-full w-full object-cover dark:brightness-[0.2] dark:grayscale"
-            />
-          </div>
         </div>
         <div className="flex-1 h-full relative">
           <div className=" absolute top-20 flex justify-between  w-full px-10 md:px-20">

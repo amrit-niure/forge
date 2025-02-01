@@ -1,14 +1,14 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card";
-import { BarChart, Bar, XAxis, YAxis,  } from "recharts";
+// import { BarChart, Bar, XAxis, YAxis,  } from "recharts";
 
-const data = [
-  { name: "Jan", applicants: 400 },
-  { name: "Feb", applicants: 300 },
-  { name: "Mar", applicants: 500 },
-  { name: "Apr", applicants: 280 },
-  { name: "May", applicants: 590 },
-  { name: "Jun", applicants: 320 },
-];
+// const data = [
+//   { name: "Jan", applicants: 400 },
+//   { name: "Feb", applicants: 300 },
+//   { name: "Mar", applicants: 500 },
+//   { name: "Apr", applicants: 280 },
+//   { name: "May", applicants: 590 },
+//   { name: "Jun", applicants: 320 },
+// ];
 
 export default function ApplicantStatistics() {
   return (
