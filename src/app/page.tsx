@@ -17,27 +17,39 @@ export default function Home() {
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <span>For Job Seekers</span>
-        <Link href='/employer/register' className={buttonVariants({variant: "default"})}>
-             Register
+          <Link
+            href="/jobseeker/signup"
+            className={buttonVariants({ variant: "default" })}
+          >
+            Sign Up
           </Link>
-                  <Link href='/employer/register' className={buttonVariants({variant: "outline"})}>
-             Login
+          <Link
+            href="/jobseeker/signin"
+            className={buttonVariants({ variant: "outline" })}
+          >
+            Sign In
           </Link>
         </div>
         <div className="flex gap-4 items-center flex-col sm:flex-row">
-        <span>For Job Employers</span>
-        <Link href='/employer/register' className={buttonVariants({variant: "outline"})}>
-             Register
+          <span>For Job Employers</span>
+          <Link
+            href="/employer/signup"
+            className={buttonVariants({ variant: "outline" })}
+          >
+            Sign Up
           </Link>
-                  <Link href='/employer/register' className={buttonVariants({variant: "secondary"})}>
-             Login
+          <Link
+            href="/employer/signin"
+            className={buttonVariants({ variant: "secondary" })}
+          >
+            Sign In
           </Link>
         </div>
       </main>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+          href="#"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -48,7 +60,7 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Learn
+           Case Studies  
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
@@ -63,11 +75,11 @@ export default function Home() {
             width={16}
             height={16}
           />
-          Examples
+       Community
         </a>
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="#"
+          href="https://jobs.eloom.com.au"
           target="_blank"
           rel="noopener noreferrer"
         >
