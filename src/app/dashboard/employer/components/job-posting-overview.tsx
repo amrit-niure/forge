@@ -1,4 +1,4 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
+import { Card, CardContent} from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Briefcase, Clock, CheckCircle, XCircle } from "lucide-react"
 
@@ -41,7 +41,12 @@ export default function JobPostingsOverview() {
   )
 }
 
-function JobStatCard({ icon, title, description, details }: any) {
+function JobStatCard({ icon, title, description, details }: {
+  icon: React.ReactNode
+  title: string
+  description: string
+  details: string
+}) {
   return (
     <div className="bg-white p-4 rounded-lg  border border-gray-200 transition-all duration-300 hover:shadow-sm hover:cursor-pointer">
       <div className="flex items-center space-x-4">

@@ -9,7 +9,6 @@ import { Calendar } from "@/components/ui/calendar"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -75,7 +74,7 @@ export const AccountForm = () => {
     }
   });
 
-  const onSubmit = (data: any) => {
+  const onSubmit = (data : AccountFormValues) => {
     toast({
       title: "Account updated",
       description: (
