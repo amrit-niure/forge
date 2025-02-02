@@ -14,6 +14,7 @@ import {
     DropdownMenuTrigger,
   } from "@/components/ui/dropdown-menu"
 import { ChevronDown } from "lucide-react"
+import Link from "next/link"
   
   export function UserNav() {
     return (
@@ -47,14 +48,14 @@ import { ChevronDown } from "lucide-react"
           </DropdownMenuLabel>
           <DropdownMenuSeparator />
           <DropdownMenuGroup>
-            <DropdownMenuItem>
-              Profile
+            <DropdownMenuItem >
+          <Link href="/dashboard/employer/settings">Profile</Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              Billing
+            <Link href="/dashboard/employer/billing"> Billing </Link>
             </DropdownMenuItem>
             <DropdownMenuItem>
-              Settings
+            <Link href="/dashboard/employer/settings/account">  Settings </Link>
             </DropdownMenuItem>
           </DropdownMenuGroup>
           <DropdownMenuSeparator />

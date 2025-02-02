@@ -65,16 +65,16 @@ export default function BackgroundPaths({
         <FloatingPaths position={-1} />
       </div>
 
-      <div className="relative z-10 container mx-auto px-4 md:px-6 text-center">
+      <div className="relative z-10 container mx-auto px-4 md:px-6 text-center flex items-center justify-center h-full border-2">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 2 }}
-          className="max-w-4xl mx-auto"
+          className="max-w-4xl mx-auto flex flex-col items-center justify-center h-full border-2"
         >
-          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 tracking-tighter">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 tracking-tighter flex items-center justify-center h-full border-2 flex-1">
             {words.map((word, wordIndex) => (
-              <span key={wordIndex} className="inline-block mr-4 last:mr-0">
+              <span key={wordIndex} className="inline-block mr-4 last:mr-0 ">
                 {word.split("").map((letter, letterIndex) => (
                   <motion.span
                     key={`${wordIndex}-${letterIndex}`}
@@ -96,9 +96,9 @@ export default function BackgroundPaths({
               </span>
             ))}
           </h1>
-
-          {/* Render children here */}
-          {children}
+          <div className="flex-1 flex items-center justify-center h-full border-2">
+            {children}
+          </div>
         </motion.div>
       </div>
     </div>

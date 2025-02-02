@@ -15,7 +15,7 @@ interface BillingLayoutProps {
 export default function BillingLayout({ children }: BillingLayoutProps) {
   return (
     <>
-      <div className=" space-y-6 pb-16 md:block">
+      <div className="  space-y-4 py-4 md:block">
         <div className="space-y-0.5">
           <h2 className="text-2xl font-bold tracking-tight">Billings</h2>
           <p className="text-muted-foreground">

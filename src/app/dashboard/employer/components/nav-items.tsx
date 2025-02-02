@@ -8,6 +8,7 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import type React from "react"; // Added import for React
 import { Icons } from "@/components/icons";
+import NavLink from "@/components/nav-link";
 
 const navItems = [
   { href: "/dashboard/employer", label: "Overview" },
@@ -66,7 +67,7 @@ export function NavItems({
       >
         {/* Hover Highlight */}
         <div
-          className="absolute h-full transition-all duration-100 ease-out bg-[#adb1ba14] dark:bg-[#ffffff1a] rounded-[6px] flex items-center"
+          className="absolute h-full transition-all duration-100 ease-out bg-[#99afdd23] dark:bg-[#ffffff1a] rounded-[6px] flex items-center"
           style={{
             ...hoverStyle,
             opacity: hoveredIndex !== null ? 1 : 0,
@@ -110,7 +111,7 @@ export function NavItems({
         <SheetContent side="top">
           <nav className="flex flex-col space-y-4 mt-4">
             {navItems.map((item) => (
-              <Link
+              <NavLink
                 key={item.href}
                 href={item.href}
                 className={cn(
@@ -121,7 +122,7 @@ export function NavItems({
                 )}
               >
                 {item.label}
-              </Link>
+              </NavLink>
             ))}
           </nav>
         </SheetContent>

@@ -20,9 +20,9 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
-import { toast } from "@/hooks/use-toast"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
+import { toast } from "sonner"
 
 const accountFormSchema = z.object({
   name: z
@@ -75,14 +75,9 @@ export const AccountForm = () => {
   });
 
   const onSubmit = (data : AccountFormValues) => {
-    toast({
-      title: "Account updated",
-      description: (
-        <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
-          <code className="text-white">{JSON.stringify(data, null, 2)}</code>
-        </pre>
-      ),
-    })
+    toast.info( <pre className="mt-2 w-[340px] rounded-md bg-slate-950 p-4">
+      <code className="text-white">{JSON.stringify(data, null, 2)}</code>
+    </pre>);
   }
 
   return (

@@ -42,7 +42,7 @@ export default function DashboardLayout({
           </div>
         </div>
       </nav>
-      <div className="max-w-7xl mx-auto ">{children}</div>
+      <div className="max-w-7xl mx-auto px-2 md:px-0 ">{children}</div>
     </>
   );
 }
