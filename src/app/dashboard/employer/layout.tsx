@@ -6,6 +6,7 @@ import { NavItems } from "@/app/dashboard/employer/components/nav-items";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Bell } from "lucide-react";
+import { ModeToggle } from "@/components/toggle-theme";
 
 export default function DashboardLayout({
   children,
@@ -38,11 +39,12 @@ export default function DashboardLayout({
             <Button variant="outline" size="icon">
               <Bell className="h-4 w-4" />
             </Button>
+            <ModeToggle />
             <UserNav />
           </div>
         </div>
       </nav>
-      <div className="max-w-7xl mx-auto px-2 md:px-0 ">{children}</div>
+      <div className="max-w-7xl mx-auto px-6 md:px-0  ">{children}</div>
     </>
   );
 }

@@ -11,21 +11,21 @@ export default function CompanyPerformanceMetrics() {
         <div className="flex items-center space-x-4">
           <Eye className="h-6 w-6 " />
           <div>
-            <p className="text-sm font-medium">Job Views</p>
+            <p className="text-sm font-medium text-muted-foreground">Job Views</p>
             <p className="text-2xl font-bold">12,543</p>
           </div>
         </div>
         <div className="flex items-center space-x-4">
           <UserCheck className="h-6 w-6 " />
           <div>
-            <p className="text-sm font-medium">Application Rate</p>
+            <p className="text-sm font-medium text-muted-foreground">Application Rate</p>
             <p className="text-2xl font-bold">8.7%</p>
           </div>
         </div>
         <div className="flex items-center space-x-4">
           <BarChart className="h-6 w-6" />
           <div>
-            <p className="text-sm font-medium">Interview Conversion</p>
+            <p className="text-sm font-medium text-muted-foreground">Interview Conversion</p>
             <p className="text-2xl font-bold">24%</p>
           </div>
         </div>

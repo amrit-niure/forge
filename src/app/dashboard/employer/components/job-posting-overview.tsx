@@ -33,7 +33,7 @@ export default function JobPostingsOverview() {
           </div>
           <div className="space-x-2">
             <Button variant="outline">Manage Jobs</Button>
-            <Button className="bg-primary text-white">Post New Job</Button>
+            <Button>Post New Job</Button>
           </div>
         </div>
       </CardContent>
@@ -48,15 +48,15 @@ function JobStatCard({ icon, title, description, details }: {
   details: string
 }) {
   return (
-    <div className="bg-white p-4 rounded-lg  border border-gray-200 transition-all duration-300 hover:shadow-sm hover:cursor-pointer">
+    <div className=" p-4 rounded-lg  border dark:border-gray-700 transition-all duration-300 hover:shadow-sm hover:cursor-pointer">
       <div className="flex items-center space-x-4">
-        <div className="bg-gray-100 p-3 rounded-full">{icon}</div>
+        <div className="bg-gray-100 dark:bg-slate-800 p-3 rounded-full">{icon}</div>
         <div>
           <h3 className="text-3xl font-bold">{title}</h3>
-          <p className="text-sm font-medium text-gray-600">{description}</p>
+          <p className="text-sm font-medium text-muted-foreground">{description}</p>
         </div>
       </div>
-      <p className="mt-2 text-xs text-gray-500">{details}</p>
+      <p className="mt-2 text-xs text-muted-foreground">{details}</p>
     </div>
   )
 }

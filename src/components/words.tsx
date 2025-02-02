@@ -12,9 +12,9 @@ export default function Words() {
     transition={{ duration: 2 }}
     className="max-w-4xl mx-auto flex flex-col items-center justify-center h-full"
   >
-    <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 tracking-tighter flex items-center justify-center h-full">
+    <h1 className="text-5xl sm:text-7xl md:text-8xl font-bold mb-8 tracking-tighter flex items-center justify-center h-full flex-col md:flex-row py-5">
       {words.map((word, wordIndex) => (
-        <span key={wordIndex} className="inline-block mr-4 last:mr-0">
+        <span key={wordIndex} className="md:inline-block mr-4 last:mr-0 flex">
           {word.split("").map((letter, letterIndex) => (
             <motion.span
               key={`${wordIndex}-${letterIndex}`}
