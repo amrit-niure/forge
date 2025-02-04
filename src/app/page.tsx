@@ -3,7 +3,7 @@ import Link from "next/link";
 import { buttonVariants } from "@/components/ui/button";
 import { SparklesCore } from "@/components/sparkles";
 import Words from "@/components/words";
-import { UserPlus, LogIn, Briefcase, Settings, Users, Globe } from "lucide-react";
+import { UserPlus, LogIn, Briefcase, Settings, Users, Globe, UserSearch } from "lucide-react";
 
 export default function Home() {
   return (
@@ -72,7 +72,7 @@ export default function Home() {
             <h2 className="text-xl font-semibold mb-4 text-neutral-900 dark:text-white">
               Dashboards
             </h2>
-            <div className="flex flex-col md:flex-row gap-4">
+            <div className="flex flex-col md:flex-row gap-4 flex-wrap items-center justify-center">
               <Link
                 href="/dashboard/employer"
                 className={`${buttonVariants({
@@ -80,6 +80,14 @@ export default function Home() {
                 })}`}
               >
                 <Briefcase className="mr-2 h-4 w-4" /> Employers Dashboard
+              </Link>
+              <Link
+                href="/dashboard/job-seeker"
+                className={`${buttonVariants({
+                  variant: "outline",
+                })}`}
+              >
+                <UserSearch className="mr-2 h-4 w-4" /> Job Seeker Dashboard
               </Link>
               <Link
                 href="/dashboard/admin"
